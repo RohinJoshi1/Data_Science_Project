@@ -1,0 +1,13 @@
+VariableName,VariableCode,Type_Of_Variable,Unit_Of_Measure,Scaling_Factor,Aggregation_Type,Weighing_Varible_ID,Weighing_Variable_Name,Long_Description
+Country,Country,Key Identifier,,0,,,,Country
+State lgd code,StateCode,Key Identifier,,0,,,,State LGD Code
+State,StateName,Key Identifier,,0,,,,State
+District lgd code,DistrictCode,Key Identifier,,0,,,,District LGD Code
+District,DistrictName,Key Identifier,,0,,,,District
+Crop name,D6820_2,Key Identifier,"",0,,"","",Crop name
+Crop season,D6820_5,Key Identifier,"",0,,"","","Season name like Rabi, Kharif, Autumn, Summer etc."
+Yearcode,YearCode,Key Identifier,"",0,,"","",YearCode
+Year,Year,Key Identifier,"",0,,"","",Year
+Land area utilized for production,I6820_6,Numeric Variable,Ha ( Hectare ),1,sum,WeighingRatio_LandArea,Land Area from Census,Area utilized for production
+Crop production,I6820_7,Numeric Variable,t ( Tonnes ),1,sum,WeighingRatio_LandArea,Land Area from Census,Crop production
+Crop yield,I6820_8,Numeric Variable,t/ha ( Tonnes per Hectares ),1,weighted avg,WeighingRatio_Percentage_LandArea,Land Area from Census,Crop yield is the amount of crop harvested per area of land

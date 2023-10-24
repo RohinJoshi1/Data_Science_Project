@@ -1,0 +1,31 @@
+library(readr)
+data <- read_csv("all_india_crop_prod/NDAP_REPORT_6820.csv")
+str(data)
+View(data)
+
+j_k <-data[data$State=="Jammu And Kashmir"]
+j_k 
+
+d_sub <- data %>% group_by("State") %>% select("State","Crop yield")
+df <- 
+  # Load the required libraries
+library(dplyr)
+library(ggplot2)
+
+# Filter out the data excluding coconuts
+non_coconut_data <- data %>%
+  filter(`Crop name` != "Coconut")
+
+# Group the data by Crop name and calculate the total production for each crop
+crop_production <- non_coconut_data %>%
+  group_by(`Crop name`) %>%
+  summarize(Total_Production = sum(`Crop production`))
+
+# Create a pie chart
+ggplot(crop_production, aes(x = "", y = Total_Production, fill = `Crop name`)) +
+  geom_bar(stat = "identity") +
+  coord_polar("y") +
+  labs(title = "Proportion of Non-Coconut Crops Grown Across States", fill = "Crop Name") +
+  scale_fill_brewer(palette = "Set3") +
+  theme_minimal() +
+  theme(legend.position = "right")

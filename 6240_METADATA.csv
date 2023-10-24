@@ -1,0 +1,16 @@
+VariableName,VariableCode,Type_Of_Variable,Unit_Of_Measure,Scaling_Factor,Aggregation_Type,Weighing_Varible_ID,Weighing_Variable_Name,Long_Description
+Country,Country,Key Identifier,,0,,,,Country
+State LGD Code,StateCode,Key Identifier,,0,,,,State LGD Code
+State,StateName,Key Identifier,,0,,,,State
+District LGD Code,DistrictCode,Key Identifier,,0,,,,District LGD Code
+District,DistrictName,Key Identifier,,0,,,,District
+Sub-District LGD Code,SubDistrictCode,Key Identifier,,0,,,,Sub-District LGD Code
+Sub-District,SubDistrictName,Key Identifier,,0,,,,Sub-District
+YearCode,YearCode,Key Identifier,,0,,"","",YearCode
+Year,Year,Key Identifier,,0,,"","",Year
+Government Cold Storages available,I6240_4,Numeric Variable,Number,1,sum,Not Applicable,Not Applicable,Government Cold Storages available
+Government Cold Storages Capacity,I6240_5,Numeric Variable,t ( Tonne ),1,sum,Not Applicable,Not Applicable,Government Cold Storages Capacity
+Private Cold Storages available,I6240_6,Numeric Variable,Number,1,sum,Not Applicable,Not Applicable,Private Cold Storages available
+Private Cold Storages Capacity,I6240_7,Numeric Variable,t ( Tonne ),1,sum,Not Applicable,Not Applicable,Private Cold Storages Capacity
+Total Number of Cold Storages,I6240_8,Numeric Variable,Number,1,sum,Not Applicable,Not Applicable,Total Number of Cold Storages
+Total Capacity of Cold Storages ,I6240_9,Numeric Variable,Number,1,sum,Not Applicable,Not Applicable,Total Capacity of Cold Storages 
